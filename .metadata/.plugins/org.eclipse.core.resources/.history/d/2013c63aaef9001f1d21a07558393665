@@ -1,0 +1,30 @@
+package Calendar;
+
+public class Calendar {
+	private Event events[];
+	
+	public Calendar()
+	{
+		events = new Event[24];
+	}
+	
+	public void addEvent(int day, Event event)
+	{
+		events[day] = event;
+	}
+	
+	public void deleteEvent(int day)
+	{
+		events[day] = null;
+	}
+	
+	public Event editEvent(int day)
+	{
+		return events[day];
+	}
+	
+	public String showEvent(int day)
+	{
+		return ("You have an event at " + events[day].getPlace() + " with " + events[day].getPerson());
+	}
+}

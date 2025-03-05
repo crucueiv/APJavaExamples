@@ -1,0 +1,10 @@
+package Calendar;
+
+public class Calendar {
+	private Event events[];
+	
+	public Calendar()
+	{
+		events = new Event[24];
+	}
+}

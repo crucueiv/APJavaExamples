@@ -1,0 +1,25 @@
+package Calendar;
+
+public class Calendar {
+	private Event events[];
+	
+	public Calendar()
+	{
+		events = new Event[24];
+	}
+	
+	public void addEvent(int day, Event event)
+	{
+		events[day] = event;
+	}
+	
+	public void deleteEvent(int day)
+	{
+		events[day] = null;
+	}
+	
+	public Event editEvent(int day)
+	{
+		return events[day];
+	}
+}
