@@ -19,28 +19,16 @@ public class Calendar {
 	
 	public void deleteEvent(int day)
 	{
-		if(day > 23 || day < 0)
-		{
-			throw new RuntimeException("Wrong time for an event");
-		}
 		events[day] = null;
 	}
 	
 	public Event editEvent(int day)
 	{
-		if(day > 23 || day < 0)
-		{
-			throw new RuntimeException("Wrong time for an event");
-		}
 		return events[day];
 	}
 	
 	public String showEvent(int day)
 	{
-		if(day > 23 || day < 0)
-		{
-			throw new RuntimeException("Wrong time for an event");
-		}
 		return ("You have an event at " + events[day].getPlace() + " with " + events[day].getPerson());
 	}
 	
